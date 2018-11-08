@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.List;
 
 public class Grid {
     //build grid for input file to be put into
@@ -72,6 +73,7 @@ public class Grid {
 
         FileReader fileReader = null;
         String inputLine;
+        List[] variableList;
         int x;
 
         try {
@@ -84,7 +86,17 @@ public class Grid {
                     String[] sudokuVariables = inputLine.split(" ");
 
                     for (int y = 0; y < sudokuVariables.length; y++) {
-                        sudokuboard[x][y] = Integer.parseInt(sudokuVariables[y]);
+                        if(y == 0){
+                            //this is where you will set the size = first number
+                        }
+                        else if(y ==1){
+
+                            //this is where we will set the variables to use = variables in second line
+                        }
+
+                        else {
+                            sudokuboard[x][y] = Integer.parseInt(sudokuVariables[y]);
+                        }
                     }
                     x++;
                 }

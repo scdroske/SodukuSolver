@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91ede816-1694-4bc6-9dab-f0877be987e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/SudokuSolver/Grid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SudokuSolver/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SudokuSolver/SudokuScript" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SudokuSolver/puzzle1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/SodukuSolver/SudokuSolver/examplefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SudokuSolver/examplefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ShapesLibrary/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ShapesLibrary/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SodukuSolver/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SudokuSolver/Cell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SodukuSolver/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SudokuSolver/GameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SodukuSolver/Grid.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SodukuSolver/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SodukuSolver/ReadInputFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SudokuSolver/ReadInputFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SodukuSolver/Solver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SudokuSolver/Solver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SodukuSolver/WriteOutputFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SudokuSolver/WriteOutputFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SodukuSolver/SudokuSolver/Grid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SodukuSolver/SudokuSolver/Grid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SodukuSolver/SudokuSolver/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SodukuSolver/SudokuSolver/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SodukuSolver/SudokuSolver/ReadInputFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SodukuSolver/SudokuSolver/ReadInputFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SudokuSolver/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SudokuSolver/Grid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SudokuSolver/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SudokuSolver/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SudokuSolver/ReadInputFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SudokuSolver/ReadInputFile.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,35 +31,59 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="SudokuScript" value="1" />
-          <entry key="java" value="8" />
-          <entry key="txt" value="1" />
+          <entry key="examplefile" value="1" />
+          <entry key="java" value="10" />
+          <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="8" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="JAVA" value="10" />
+          <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3696" />
+          <entry key="java" value="9200" />
+          <entry key="txt" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3696" />
+          <entry key="JAVA" value="9200" />
+          <entry key="PLAIN_TEXT" value="10" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SudokuSolver/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="248">
+              <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/Scanner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="938" selection-start-line="938" selection-end-line="938" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SudokuSolver/examplefile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -70,31 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SudokuSolver/puzzle1.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SudokuSolver/SudokuScript">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SudokuSolver/Solver.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SudokuSolver/GameBoard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -108,11 +106,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SudokuSolver/Grid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="64" column="33" lean-forward="true" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+            <state relative-caret-position="289">
+              <caret line="85" column="68" lean-forward="true" selection-start-line="85" selection-start-column="47" selection-end-line="85" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#437#438#0" expanded="true" />
@@ -135,15 +133,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SudokuSolver/ReadInputFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="102">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SudokuSolver/WriteOutputFile.java">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -168,8 +164,10 @@
         <option value="$PROJECT_DIR$/src/SodukuSolver/Cell.java" />
         <option value="$PROJECT_DIR$/src/SodukuSolver/Grid.java" />
         <option value="$PROJECT_DIR$/src/SodukuSolver/Main.java" />
-        <option value="$PROJECT_DIR$/src/SudokuSolver/puzzle1.txt" />
         <option value="$PROJECT_DIR$/src/SudokuSolver/Grid.java" />
+        <option value="$PROJECT_DIR$/src/SudokuSolver/ReadInputFile.java" />
+        <option value="$PROJECT_DIR$/src/SudokuSolver/examplefile" />
+        <option value="$PROJECT_DIR$/src/SudokuSolver/puzzle1.txt" />
         <option value="$PROJECT_DIR$/src/SudokuSolver/Main.java" />
       </list>
     </option>
@@ -213,7 +211,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541626897659" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541640491973" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ExampleSodukuSolvers/Sudoku-Backtracking-AC3-Forward-Checking" />
   </component>
   <component name="RecentsManager">
@@ -296,15 +294,15 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24966443" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32885906" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32885906" />
+      <window_info anchor="bottom" id="Messages" weight="0.33154362" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32885906" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18657719" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31409395" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -324,18 +322,19 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24966443" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24966443" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.32885906" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="3" />
-      <window_info anchor="bottom" id="Find" order="4" />
-      <window_info anchor="bottom" id="Run" order="5" />
-      <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="9" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.33154362" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32885906" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.19194631" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
@@ -352,13 +351,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/SudokuSolver/WriteOutputFile.java">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SudokuSolver/Cell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SudokuSolver/GameBoard.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -377,31 +369,27 @@
     <entry file="file://$PROJECT_DIR$/src/SudokuSolver/SudokuScript">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SudokuSolver/puzzle1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SudokuSolver/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/SudokuSolver/Cell.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SudokuSolver/ReadInputFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SudokuSolver/Grid.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="64" column="33" lean-forward="true" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+        <state relative-caret-position="289">
+          <caret line="85" column="68" lean-forward="true" selection-start-line="85" selection-start-column="47" selection-end-line="85" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#437#438#0" expanded="true" />
@@ -416,6 +404,37 @@
             <element signature="e#1384#1385#0" expanded="true" />
             <element signature="e#1446#1447#0" expanded="true" />
             <element signature="e#1498#1499#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SudokuSolver/examplefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/Scanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="938" selection-start-line="938" selection-end-line="938" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SudokuSolver/puzzle1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SudokuSolver/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
