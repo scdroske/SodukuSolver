@@ -1,123 +1,117 @@
 package SudokuSolver;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.List;
-
 public class Grid {
-    //build grid for input file to be put into
+    public class Node {
+        private int data, boxID;
+        private Node up, down, left, right;
 
-    private File inputFile;
-    public int[][] sudokuboard;
+        private boolean[] solvable = new boolean[10];
 
-    int size = 4;  // this will be modified to size of board will be the second input of the script --- 1 2 3 4 5 6 7 8 9  --> create a 9x9 grid
+        // Initialize the variables
+        public Node() {
+            this.data = 0;
+            this.boxID = 0;
+            this.up = null;
+            this.down = null;
+            this.left = null;
+            this.right = null;
 
-    public File getInputFile(){
-        return inputFile;
-    }
-
-    public void setInputFile(File file){
-        inputFile = file;
-    }
-
-    public int getGridSize(){
-        return size;
-    }
-
-    public void setGridSize(int gridSize){
-        size = gridSize;
-    }
-
-
-    public Grid() {
-        inputFile = null;
-        sudokuboard = new int[size][size];
-        for (int x = 0; x < size; x++) {
-            for (int y = 0; y < size; y++) {
-                sudokuboard[x][y] = 0;
+            for (int i = 0; i < solvable.length; i++) {
+                // Set the possibility for all 1-9 to true initially
+                solvable[i] = true;
             }
+            solvable[0] = false;
         }
-    }
 
-    //time to initialize grid based on input
-    //sets all the grid to 0's to establish an empty size
-    public Grid(Grid initialGrid){
-        getGridSize();
-        getInputFile();
-        inputFile = initialGrid.inputFile;
-        sudokuboard = new int[size][size];
-
-        for (int x = 0; x < size; x++) {
-            System.arraycopy(initialGrid.sudokuboard[x], 0, sudokuboard[x], 0, size);
+        // Constructor overload
+        public Node(int data) {
+            this.data = data;
         }
-    }
 
-    public int getCell(int row, int column){
-        return sudokuboard[row][column];
-    }
+        // Getters and setters for the Node value
+        public int getData() {
+            return this.data;
+        }
 
-    public void setCell(int cellValue, int row, int column){
-        sudokuboard[row][column] = cellValue;
-    }
+        public void setData(int data) {
+            this.data = data;
+        }
 
+        // Returns ID of the box the cell belongs to
+        public int getBoxID() {
+            return this.boxID;
+        }
 
-    //code to read in the file that contains the info to put into the grid.
-    public void readInputFile() {
-        //Steps:
-        //read in the file
-        //check if file can be opened (check errors)
-        //parse the integers into the grid
-        //close the file (check errors)
+        // Sets ID of the box the cell belongs to
+        public void setBoxID(int id) {
+            this.boxID = id;
+        }
 
-        FileReader fileReader = null;
-        String inputLine;
-        List[] variableList;
-        int x;
+        // Getters for the adjacent nodes
+        public Node getUp() {
+            return this.up;
+        }
 
-        try {
-            fileReader = new FileReader(inputFile);
-            BufferedReader bufferedReader = new BufferedReader(fileReader);
+        public Node getDown() {
+            return this.down;
+        }
 
-            try {
-                x = 0;
-                while ((inputLine = bufferedReader.readLine()) != null) {
-                    String[] sudokuVariables = inputLine.split(" ");
+        public Node getRight() {
+            return this.right;
+        }
 
-                    for (int y = 0; y < sudokuVariables.length; y++) {
-                        if(y == 0){
-                            //this is where you will set the size = first number
-                        }
-                        else if(y ==1){
+        public Node getLeft() {
+            return this.left;
+        }
 
-                            //this is where we will set the variables to use = variables in second line
-                        }
+        // Setters for the adjacent nodes
+        public void setUp(Node up) {
+            this.up = up;
+        }
 
-                        else {
-                            sudokuboard[x][y] = Integer.parseInt(sudokuVariables[y]);
-                        }
+        public void setDown(Node down) {
+            this.down = down;
+        }
+
+        public void setRight(Node right) {
+            this.right = right;
+        }
+
+        public void setLeft(Node left) {
+            this.left = left;
+        }
+
+        // Set the possibility of a number to impossible
+        public void setImpossible(int poss) {
+            solvable[poss] = false;
+        }
+
+        // Getter for the possibilities array
+        public boolean[] getPossibilities() {
+            return this.solvable;
+        }
+
+        // Method for solving the node when there is only 1 possibility
+        public boolean solveNode() {
+            if (this.data == 0) { // If not already solved
+
+                int poss = 0; // Number of possibilities
+                int solvedVal = 0;
+                for (int i = 1; i < solvable.length; i++) { // Iterate through each possibility
+                    if (this.solvable[i] == true) {
+                        poss++;
+                        solvedVal = i;
                     }
-                    x++;
                 }
-            } catch (IOException e) {
-                System.out.println("Cannot read file lines from file:" + inputFile.getName());
-            }
-        } catch (IOException ex) {
-            System.out.println("Cannot open file: " + inputFile.getName());
-        } finally {
-            try {
-                if (null != fileReader) {
-                    fileReader.close();
+                if (poss == 1) { // If there was only 1 possibility found
+                    this.data = solvedVal;
+                    return true; // Return true if the cell was solved
                 }
-            } catch (Exception exc) {
-                System.out.println("Cannot close file: " + inputFile.getName());
             }
+
+            return false;
         }
+
+
     }
-
-
 }
-
-
-
