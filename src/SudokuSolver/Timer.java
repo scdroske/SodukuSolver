@@ -19,6 +19,7 @@ public class Timer{
 
     public long TotalTime(){
         long timeEllapsed = Duration.between(startTimer(), stopTimer()).toMillis();
+        System.out.println("total time taken: " + timeEllapsed);
         return timeEllapsed;
     }
 }

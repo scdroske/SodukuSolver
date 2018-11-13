@@ -7,7 +7,7 @@ import static SudokuSolver.ReadInputFile.getVariables;
 public class CorrectSolution {
 
     /**
-     * Checks if there are any repeated numbers in a sub matrix
+     * Checks if repeated numbers occur in a sub matrix
      */
     public boolean checkMatrix(String file, int row, int col) {
         ReadInputFile inputFile = new ReadInputFile();
@@ -38,7 +38,7 @@ public class CorrectSolution {
     }
 
     /**
-     * Checks if the given answer is correct
+     * Checks for the correct answer in the code
      *
      */
     public boolean checkBoard(String file) {
@@ -52,8 +52,8 @@ public class CorrectSolution {
         String value;
 
         //Iterate through the board
-        for (int i = 0; i < 9; i++) {
-            for (int j = 0; j < 9; j++) {
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
                 value = sudokuboard[i][j];
 
                 if (value == "-") {
@@ -61,7 +61,7 @@ public class CorrectSolution {
                 }
 
                 //Check for repeated numbers on the row
-                for (int z = 0; z < 9; z++) {
+                for (int z = 0; z < size; z++) {
                     if (j != z) {
                         if (value == sudokuboard[i][z]) {
                             return false;
@@ -70,7 +70,7 @@ public class CorrectSolution {
                 }
 
                 //Check for repeated numbers on the column
-                for (int z = 0; z < 9; z++) {
+                for (int z = 0; z < size; z++) {
                     if (i != z) {
                         if (value == sudokuboard[z][j]) {
                             return false;
@@ -80,8 +80,8 @@ public class CorrectSolution {
             }
         }
         //check sub matrices
-        for (int i = 1; i <= (size - 3); i += 3) {
-            for (int j = 1; j <= 7; j += 3) {
+        for (int i = 1; i <= (size - 2); i += 3) {
+            for (int j = 1; j <= (size -2 ); j += 3) {
                 if (checkMatrix(file,i, j)) {
                     return false;
                 }

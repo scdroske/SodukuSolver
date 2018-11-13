@@ -1,7 +1,16 @@
 package SudokuSolver;
 
-public class Backtracking {
+public class Backtracking extends Solver {
 
+    @Override
+    protected void findApplicableCells() {
+
+    }
+
+    @Override
+    protected void applyChanges() {
+
+    }
 }
     /**
     //go through the row, check if the solution exists..

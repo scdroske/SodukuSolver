@@ -48,6 +48,17 @@ public class WriteOutputFile extends ReadInputFile{
 
         data += "input strategy" + "            " + 0 + "                " + "0:0"; //this is where the data will go
 
+        Solver nakedTwins = new NakedTwins();
+        nakedTwins.execute();
+
+        Solver backtracking = new Backtracking();
+        backtracking.execute();
+
+
+        /**how do we get the data that is going to be run to the output file?
+         * We have the execute method running and the file prints to the command line.. need to get it to go to the output file
+         */
+
 
         writeToFile(outputfile, data);
     }
