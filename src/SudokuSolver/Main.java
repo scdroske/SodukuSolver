@@ -13,43 +13,29 @@ import java.util.*;
 
 public class Main {
 
-    public static void main(String[] args){
-       //String text = readString("C:\\Users\\scdro\\OneDrive\\Desktop\\CS5700\\SodukuSolver\\src\\SudokuSolver\\puzzle1.txt");
-       // System.out.println(text);
-        String[] variables = readArray("C:\\Users\\scdro\\OneDrive\\Desktop\\CS5700\\SodukuSolver\\src\\SudokuSolver\\puzzle1.txt");
+    public static void main(String[] args) {
+        String file = "C:\\Users\\scdro\\OneDrive\\Desktop\\CS5700\\SodukuSolver\\src\\SudokuSolver\\puzzle1.txt";
 
-        int size = Integer.valueOf(variables[0]);
-        //System.out.println(size);
-        String[] availableVariables = new String[size];
-        for(int i = 0; i < size; i++){
-            availableVariables[i] = variables[i+1];
-           // System.out.println(availableVariables[i]);
-        }
+        ReadInputFile readfile = new ReadInputFile();
+        readfile.readIn(file);
 
-        String[][] sudokuboard = new String[size][size];
-        int varcount = size +1;
-        //for (int i = 5; i < variables.length; i++){
-            for( int x = 0; x < size; x++){
-                for(int y = 0; y < size; y++) {
-                    sudokuboard[x][y] = variables[varcount];
-                    varcount++;
-                }
-            }
-            
+        WriteOutputFile writefile = new WriteOutputFile();
+        writefile.WriteOutputFile(file);
+
+
+
     }
 
 
 
-
-    public static String readString(String file){
+    public static String readString(String file) {
         String variables = "";
-        try{
+        try {
             Scanner s = new Scanner(new File(file));
-            while(s.hasNextLine()){
+            while (s.hasNextLine()) {
                 variables = variables + s.next() + " ";
             }
-        }
-        catch(FileNotFoundException e){
+        } catch (FileNotFoundException e) {
             System.out.println("File not found");
         }
         return variables;
@@ -62,7 +48,7 @@ public class Main {
         //create array and copy elements in
         try {
             Scanner readinPuzzle = new Scanner(new File(file));
-            while(readinPuzzle.hasNext()){
+            while (readinPuzzle.hasNext()) {
                 counter++;
                 readinPuzzle.next();
             }
@@ -70,16 +56,34 @@ public class Main {
             String[] variables = new String[counter];
 
             Scanner line = new Scanner(new File(file));
-            for(int i = 0; i < counter; i++){
+            for (int i = 0; i < counter; i++) {
                 variables[i] = line.next();
             }
 
             return variables;
 
-        }
-        catch (FileNotFoundException e) {
+        } catch (FileNotFoundException e) {
             System.out.println("Cannot read file");
             return null;
+        }
+    }
+
+
+    public static void writeToFile(String file, String data) {
+        OutputStream os = null;
+        try {
+            //write input and then corresponding output to file
+            os = new FileOutputStream(new File(file));
+            os.write(data.getBytes(), 0, data.length());
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                os.close();
+            } catch (IOException e1) {
+                e1.printStackTrace();
+            }
         }
     }
 }
