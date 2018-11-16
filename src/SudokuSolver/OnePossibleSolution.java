@@ -4,15 +4,9 @@ import java.time.Duration;
 import java.time.Instant;
 import java.util.concurrent.TimeUnit;
 
-public class NakedTwins extends Solver {
-    @Override
-    protected long timeToComplete() {
-        long time = this.stopTimer() - this.startTimer();
-        Timer timer = new Timer();
+public class OnePossibleSolution extends Solver {
 
-        return time;
 
-    }
 
     @Override
     protected void findApplicableCells() {
@@ -20,7 +14,18 @@ public class NakedTwins extends Solver {
     }
 
     @Override
-    protected double applyChanges() {
-        return 2;
+    protected long timeToComplete() {
+        long time = this.stopTimer() - this.startTimer();
+        Timer timer = new Timer();
+        String timeTaken = timer.timeConverter(time);
+
+        return time;
+
     }
+
+    @Override
+    protected double applyChanges() {
+        return 1;
+    }
+
 }

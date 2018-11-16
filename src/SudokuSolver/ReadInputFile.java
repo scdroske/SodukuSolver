@@ -37,6 +37,10 @@ public class ReadInputFile {
         return sudokuboard;
     }
 
+    public void setSudokuBoard(){};
+
+    
+
     /**gets the submatrix size of the sudokuboard */
     public static double getSubMatrixSize(String file){
         double subMatrixSize = 0;
@@ -44,6 +48,9 @@ public class ReadInputFile {
         subMatrixSize = Math.sqrt(Integer.valueOf(variables[0]));
         return subMatrixSize;
     }
+
+    public void setSubMatrixSize(){};
+
 
     /**gets the matrix size of the sudokuboard */
     public static int getSize(String file){
@@ -53,12 +60,15 @@ public class ReadInputFile {
         return size;
     }
 
+    public void setSize(){};
+
     /**gets all of the data from the input file  */
     public static String[] getVariables(String file){
         String[] variables = readArray(file);
         return variables;
     }
 
+    public void setVariables(){};
     /**gets the available variables to use to fill in the blanks of the sudokuboard */
     public static String[] getAvailableVariables(String file, int size){
         String variables[] = getVariables(file);
@@ -71,6 +81,9 @@ public class ReadInputFile {
         return availableVariables;
     }
 
+    public void setAvailableVariables(String file, int size){
+
+    }
 
     /**implement to read title of file being read in if implementing through a directory */
     public static String readString(String file) {

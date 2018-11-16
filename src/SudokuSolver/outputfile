@@ -12,5 +12,7 @@ Solved Puzzle:
 
  
  
-Strategy:              Uses:             Time: 
-input strategy            0                0:0
+Strategy:              Uses:         Time: 
+Twins :                 2.0          -1334
+Backtracking :          4.0          0
+One Possible Solution:  1.0          0

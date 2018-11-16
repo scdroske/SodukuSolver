@@ -41,18 +41,24 @@ public class WriteOutputFile extends ReadInputFile{
 
         data += "\n \n \n"; //this is where the solution to the puzzle will go
 
+/**
+ * This describes the Strategies used , uses and time taken to completion (Call solver, and pull execute)
+ */
 
-
-        data += "Strategy:              Uses:             Time: \n";
-
-
-        data += "input strategy" + "            " + 0 + "                " + "0:0"; //this is where the data will go
+        data += "Strategy:              Uses:         Time: \n";
+         //this is where the data will go
 
         Solver nakedTwins = new NakedTwins();
         nakedTwins.execute();
+        data += "Twins : " + "                " + nakedTwins.applyChanges() +  "          "  +  nakedTwins.timeToComplete() + "\n";
 
         Solver backtracking = new Backtracking();
         backtracking.execute();
+        data += "Backtracking : " + "         " + backtracking.applyChanges() + "          " + backtracking.timeToComplete() + "\n";
+
+        Solver onePossibleSolution = new OnePossibleSolution();
+        onePossibleSolution.execute();
+        data += "One Possible Solution:" + "  " + onePossibleSolution.applyChanges() + "          " + onePossibleSolution.timeToComplete() + "\n";
 
 
         /**how do we get the data that is going to be run to the output file?
