@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
 
+
 public class ReadInputFile {
 
     public static void readIn(String file){
@@ -20,7 +21,6 @@ public class ReadInputFile {
 
         /** read in sudokuboard*/
         String[][] sudokuboard = getSudokuBoard(file,size,variables);
-
     }
 
     /**gets the initial sudokuboard and stores it as an array of strings [][] */
@@ -39,7 +39,7 @@ public class ReadInputFile {
 
     public void setSudokuBoard(){};
 
-    
+
 
     /**gets the submatrix size of the sudokuboard */
     public static double getSubMatrixSize(String file){

@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91ede816-1694-4bc6-9dab-f0877be987e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/SudokuSolver/OnePossibleSolution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ShapesLibrary/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ShapesLibrary/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SodukuSolver/SudokuSolver/Backtracking.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SodukuSolver/SudokuSolver/Backtracking.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SodukuSolver/SudokuSolver/CorrectSolution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SodukuSolver/SudokuSolver/CorrectSolution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SodukuSolver/SudokuSolver/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SodukuSolver/SudokuSolver/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SodukuSolver/SudokuSolver/NakedTwins.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SodukuSolver/SudokuSolver/NakedTwins.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SodukuSolver/SudokuSolver/Solver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SodukuSolver/SudokuSolver/Solver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SodukuSolver/SudokuSolver/Timer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SodukuSolver/SudokuSolver/Timer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SodukuSolver/SudokuSolver/WriteOutputFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SodukuSolver/SudokuSolver/WriteOutputFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SodukuSolver/SudokuSolver/outputfile" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SodukuSolver/SudokuSolver/outputfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SudokuSolver/Backtracking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SudokuSolver/Backtracking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SudokuSolver/NakedTwins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SudokuSolver/NakedTwins.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SudokuSolver/ReadInputFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SudokuSolver/ReadInputFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SudokuSolver/Solver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SudokuSolver/Solver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SudokuSolver/Timer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SudokuSolver/Timer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SudokuSolver/WriteOutputFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SudokuSolver/WriteOutputFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SudokuSolver/outputfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/SudokuSolver/outputfile" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,14 +40,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="18774" />
+          <entry key="java" value="18776" />
           <entry key="outputfile" value="1" />
           <entry key="txt" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="18774" />
+          <entry key="JAVA" value="18776" />
           <entry key="PLAIN_TEXT" value="11" />
         </counts>
       </usages-collector>
@@ -83,8 +67,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SudokuSolver/WriteOutputFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="119">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SudokuSolver/ReadInputFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,22 +89,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/SudokuSolver/ReadInputFile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="41" column="4" lean-forward="true" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SudokuSolver/outputfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="68">
+              <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -116,7 +100,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SudokuSolver/Solver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
+            <state relative-caret-position="476">
               <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -128,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SudokuSolver/Backtracking.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="-85">
+              <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -140,7 +124,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SudokuSolver/NakedTwins.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="187">
               <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -152,7 +136,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SudokuSolver/CorrectSolution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
+            <state relative-caret-position="408">
               <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -338,7 +322,7 @@
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12684564" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12684564" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -347,7 +331,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32885906" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18657719" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18657719" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -450,19 +434,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SudokuSolver/NakedTwins.java">
+    <entry file="file://$PROJECT_DIR$/src/SudokuSolver/examplefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SudokuSolver/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SudokuSolver/CorrectSolution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
+        <state relative-caret-position="408">
           <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -480,23 +468,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SudokuSolver/examplefile">
+    <entry file="file://$PROJECT_DIR$/src/SudokuSolver/ReadInputFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SudokuSolver/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/SudokuSolver/WriteOutputFile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SudokuSolver/Backtracking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SudokuSolver/NakedTwins.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SudokuSolver/Solver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
+        <state relative-caret-position="476">
           <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -506,38 +520,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SudokuSolver/outputfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SudokuSolver/Backtracking.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SudokuSolver/WriteOutputFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SudokuSolver/ReadInputFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="4" lean-forward="true" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-end-line="5" />
         </state>
       </provider>
     </entry>
