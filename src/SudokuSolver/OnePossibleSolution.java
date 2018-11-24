@@ -10,7 +10,7 @@ public class OnePossibleSolution extends Solver {
 
     @Override
     protected void findApplicableCells() {
-
+        //if there is only one cell number left, fill cell 
     }
 
     @Override

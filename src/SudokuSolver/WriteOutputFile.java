@@ -15,7 +15,6 @@ public class WriteOutputFile extends ReadInputFile{
         String[] variables = getVariables(file);
         String[][] sudokuboard = getSudokuBoard(file,size,variables);
 
-
         String outputfile = "C:\\Users\\scdro\\OneDrive\\Desktop\\CS5700\\SodukuSolver\\src\\SudokuSolver\\outputfile";
         String data = "";
 
