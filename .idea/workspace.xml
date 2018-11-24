@@ -210,7 +210,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="500" />
     <option name="y" value="153" />
     <option name="width" value="460" />
@@ -254,7 +254,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543096975101" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543096979303" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ExampleSodukuSolvers/Sudoku-Backtracking-AC3-Forward-Checking" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -330,7 +330,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14026846" />
