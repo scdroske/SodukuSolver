@@ -15,7 +15,7 @@ public class CorrectSolution {
         String[] variables = getVariables(file);
         String[] availableVariables = getAvailableVariables(file, size);
 
-        String[][] sudokuboard = inputFile.getSudokuBoard(file, size, variables);
+        String[][] sudokuboard = inputFile.getSudokuBoard(size, variables);
 
         int i, j;
         String central;
@@ -47,7 +47,7 @@ public class CorrectSolution {
         String[] variables = getVariables(file);
         String[] availableVariables = getAvailableVariables(file, size);
 
-        String[][] sudokuboard = inputFile.getSudokuBoard(file, size, variables);
+        String[][] sudokuboard = inputFile.getSudokuBoard(size, variables);
 
         String value;
 

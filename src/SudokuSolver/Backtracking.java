@@ -6,24 +6,22 @@ import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 import static SudokuSolver.ReadInputFile.*;
+import static java.lang.Math.abs;
 
 
 public class Backtracking extends Solver {
 
-    int size = getSize(file);
-    String[] availableVariables = getAvailableVariables(file, size);
-    String[] variables = getVariables(file);
-    String[][] sudokuboard = getSudokuBoard(file,size,variables);
-
-
+    //int size = getSize(file);
+    //String[] availableVariables = getAvailableVariables(file, size);
+    //String[] variables = getVariables(file);
+    //String[][] sudokuboard = getSudokuBoard(file,size,variables);
 
 
     @Override
     protected double applyChanges() {
-        try{
+        try {
             Thread.sleep(11000);
-        }
-        catch(InterruptedException e){
+        } catch (InterruptedException e) {
             System.out.println("Cannot Sleep");
         }
         return 4;
@@ -35,30 +33,28 @@ public class Backtracking extends Solver {
         String timeTaken = "" + time;
         System.out.println("Time: " + timeTaken);
         long durationinMS = TimeUnit.MILLISECONDS.convert(time, TimeUnit.NANOSECONDS);
-        return durationinMS;
+        time = time*-1;
+        return time;
 
     }
 
 
     @Override
     protected void findApplicableCells() {
-        try{
+        try {
+            //backtracking(sudokuboard);
             //this is where we will implement the code to backtrack
             Thread.sleep(100);
-        }
-        catch(InterruptedException e){
+        } catch (InterruptedException e) {
             System.out.println("Cannot Sleep");
         }
     }
-
 }
-
-
-
-    private boolean backtrack(Grid board, Cell cell) {
+/**
+    private boolean backtracking(String[][] sudokuboard) {
         int recursiveCalls = 0;
         recursiveCalls++;
-        if (endOfGrid(board)) {
+        if (endOfGrid(sudokuboard)) {
             return true;
         }
 
@@ -67,22 +63,22 @@ public class Backtracking extends Solver {
 
         for (int i = 0; i < valuesCell.size(); i++) { // Iterate through the cells domain
             value = valuesCell.get(i);                  // get a value from the domain
-            board.setCell(value, cell.row, cell.col);  // set the value onto the board
-            if (isValid(board, cell, value)) {            // check for errors
-                if (backtrack(board, cell.nextCell(board))) {   // recursive call
+            sudokuboard.setCell(value, cell.row, cell.col);  // set the value onto the board
+            if (isValid(sudokuboard, cell, value)) {            // check for errors
+                if (backtrack(sudokuboard, cell.nextCell(sudokuboard))) {   // recursive call
                     return true;
                 }
             }
         }
-        board.setCell(0, cell.row, cell.col);  // restores the cell value
+        sudokuboard.setCell(0, cell.row, cell.col);  // restores the cell value
 
         return false;
     }
 
-    private boolean endOfGrid(Grid tablero) { // returns true if the whole grid is full
+    private boolean endOfGrid(String[][] sudokuboard) { // returns true if the whole grid is full
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
-                if (tablero.getCell(i, j) == 0) {
+                if (sudokuboard.getCell(i, j) == 0) {
                     return false;
                 }
             }
@@ -133,6 +129,9 @@ public class Backtracking extends Solver {
         }
         return true;
     }
+
+}
+
 
     /**
     //go through the row, check if the solution exists..

@@ -20,11 +20,11 @@ public class ReadInputFile {
         }
 
         /** read in sudokuboard*/
-        String[][] sudokuboard = getSudokuBoard(file,size,variables);
+        String[][] sudokuboard = getSudokuBoard(size,variables);
     }
 
     /**gets the initial sudokuboard and stores it as an array of strings [][] */
-    public static String[][] getSudokuBoard(String file, int size, String[] variables){
+    public static String[][] getSudokuBoard(int size, String[] variables) {
         String[][] sudokuboard = new String[size][size];
         int varcount = size + 1;
         //for (int i = 5; i < variables.length; i++){
@@ -37,7 +37,12 @@ public class ReadInputFile {
         return sudokuboard;
     }
 
-    public void setSudokuBoard(){};
+    public void setSudokuBoard () {
+        //this.sudokuboard = sudokuboard;
+
+        }
+
+
 
 
 
