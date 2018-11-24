@@ -18,11 +18,35 @@ public class NakedTwins extends Solver {
 
     @Override
     protected void findApplicableCells() {
+        try {
+            ReadInputFile inputFile = new ReadInputFile();
+            int size = inputFile.size;
+            String[][] sudokuboard = inputFile.sudokuboard;
 
+            for(int i = 0; i < size; i++){
+                for(int j = 0; j < size; j++){
+                    if (sudokuboard[i][j] == "-"){
+                        sudokuboard[i][j] = "0";
+                    }
+                    else
+                        continue;
+                }
+
+            }
+
+
+            System.out.println("solving puzzle");
+            //backtracking(sudokuboard);
+            //this is where we will implement the code to backtrack
+            Thread.sleep(10);
+        } catch (InterruptedException e) {
+            System.out.println("Cannot Sleep");
+        }
     }
 
     @Override
     protected double applyChanges() {
+        System.out.println("Applying changes via Naked Twins");
         return 2;
     }
 }

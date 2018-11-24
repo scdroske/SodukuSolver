@@ -10,12 +10,23 @@ public class WriteOutputFile extends ReadInputFile{
 
     public void WriteOutputFile(String file){
         //Writing output file
+        ReadInputFile inputFile = new ReadInputFile();
+
         int size = getSize(file);
         String[] availableVariables = getAvailableVariables(file, size);
         String[] variables = getVariables(file);
-        String[][] sudokuboard = getSudokuBoard(size,variables);
+        String[][] sudokuboard = getSudokuBoard(size, variables);
 
         String outputfile = "C:\\Users\\scdro\\OneDrive\\Desktop\\CS5700\\SodukuSolver\\src\\SudokuSolver\\outputfile";
+        Solver nakedTwins = new NakedTwins();
+        nakedTwins.execute();
+        Solver backtracking = new Backtracking();
+        backtracking.execute();
+        Solver onePossibleSolution = new OnePossibleSolution();
+        onePossibleSolution.execute();
+
+
+
         String data = "";
 
         data += "Initial Puzzle: \n";
@@ -38,6 +49,7 @@ public class WriteOutputFile extends ReadInputFile{
 
 
 
+
         data += "\n \n \n"; //this is where the solution to the puzzle will go
 
 /**
@@ -47,16 +59,14 @@ public class WriteOutputFile extends ReadInputFile{
         data += "Strategy:              Uses:         Time: \n";
          //this is where the data will go
 
-        Solver nakedTwins = new NakedTwins();
-        nakedTwins.execute();
+
+
         data += "Twins : " + "                " + nakedTwins.applyChanges() +  "          "  +  nakedTwins.timeToComplete() + "\n";
 
-        Solver backtracking = new Backtracking();
-        backtracking.execute();
+
         data += "Backtracking : " + "         " + backtracking.applyChanges() + "          " + backtracking.timeToComplete() + "\n";
 
-        Solver onePossibleSolution = new OnePossibleSolution();
-        onePossibleSolution.execute();
+
         data += "One Possible Solution:" + "  " + onePossibleSolution.applyChanges() + "          " + onePossibleSolution.timeToComplete() + "\n";
 
 

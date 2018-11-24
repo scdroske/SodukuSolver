@@ -7,24 +7,41 @@ import java.util.Scanner;
 
 
 public class ReadInputFile {
+    protected String[][] sudokuboard;
+    protected int size;
+    protected String file = "C:\\Users\\scdro\\OneDrive\\Desktop\\CS5700\\SodukuSolver\\src\\SudokuSolver\\puzzle1.txt";
+    protected double subMatrixSize;
+    protected String[] variables;
+    protected String[] availableVariables;
 
-    public static void readIn(String file){
+    public ReadInputFile() {
+        //getSize(file);
+        //readIn(file);
 
-        int size = getSize(file);
+        //getSudokuBoard(size,variables) throws SudokuException;
+    }
+
+    public void readIn(String file)  {
         String[] variables = getVariables(file);
+        this.variables = variables;
+        //this.variables = variables;
         String[] availableVariables = getAvailableVariables(file, size);
 
         for (int i = 0; i < size; i++) {
             availableVariables[i] = variables[i + 1];
             // System.out.println(availableVariables[i]);
         }
+        this.availableVariables = availableVariables;
 
         /** read in sudokuboard*/
-        String[][] sudokuboard = getSudokuBoard(size,variables);
+        //String[][] sudokuboard = getSudokuBoard(size,variables);
+
     }
 
-    /**gets the initial sudokuboard and stores it as an array of strings [][] */
-    public static String[][] getSudokuBoard(int size, String[] variables) {
+    /**
+     * gets the initial sudokuboard and stores it as an array of strings [][]
+     */
+    public String[][] getSudokuBoard(int size, String[] variables){
         String[][] sudokuboard = new String[size][size];
         int varcount = size + 1;
         //for (int i = 5; i < variables.length; i++){
@@ -34,48 +51,59 @@ public class ReadInputFile {
                 varcount++;
             }
         }
+        this.sudokuboard = sudokuboard;
         return sudokuboard;
     }
 
-    public void setSudokuBoard () {
+    public void checkSudokuBoard() throws SudokuException {
         //this.sudokuboard = sudokuboard;
+        Validator.validateBoard(size, "Board Doesn't exist");
+        Validator.validateBoardExists(size, "Board doesn't exist");
+        Validator.validateSquareBoard(size, sudokuboard.length, "Board is not square");
 
-        }
+    }
 
-
-
-
-
-    /**gets the submatrix size of the sudokuboard */
-    public static double getSubMatrixSize(String file){
+    /**
+     * gets the submatrix size of the sudokuboard
+     */
+    public double getSubMatrixSize(String file) {
         double subMatrixSize = 0;
         String[] variables = readArray(file);
         subMatrixSize = Math.sqrt(Integer.valueOf(variables[0]));
+        this.subMatrixSize = subMatrixSize;
         return subMatrixSize;
     }
 
-    public void setSubMatrixSize(){};
+    public void setSubMatrixSize() {
+    }
 
 
-    /**gets the matrix size of the sudokuboard */
-    public static int getSize(String file){
+    /**
+     * gets the matrix size of the sudokuboard
+     */
+    public int getSize(String file) {
         int size = 0;
         String[] variables = readArray(file);
         size = Integer.valueOf(variables[0]);
+        this.size = size;
         return size;
     }
 
-    public void setSize(){};
 
-    /**gets all of the data from the input file  */
-    public static String[] getVariables(String file){
+    /**
+     * gets all of the data from the input file
+     */
+    public String[] getVariables(String file) {
         String[] variables = readArray(file);
+        this.variables = variables;
         return variables;
     }
 
-    public void setVariables(){};
-    /**gets the available variables to use to fill in the blanks of the sudokuboard */
-    public static String[] getAvailableVariables(String file, int size){
+
+    /**
+     * gets the available variables to use to fill in the blanks of the sudokuboard
+     */
+    public String[] getAvailableVariables(String file, int size) {
         String variables[] = getVariables(file);
 
         String[] availableVariables = new String[size];
@@ -83,15 +111,18 @@ public class ReadInputFile {
             availableVariables[i] = variables[i + 1];
             // System.out.println(availableVariables[i]);
         }
+        this.availableVariables = availableVariables;
         return availableVariables;
     }
 
-    public void setAvailableVariables(String file, int size){
+    public void setAvailableVariables(String file, int size) {
 
     }
 
-    /**implement to read title of file being read in if implementing through a directory */
-    public static String readString(String file) {
+    /**
+     * implement to read title of file being read in if implementing through a directory
+     */
+    public static String readString(String file) throws SudokuException{
         String variables = "";
         try {
             Scanner s = new Scanner(new File(file));
@@ -105,7 +136,9 @@ public class ReadInputFile {
     }
 
 
-/** reads the array of data from the input file */
+    /**
+     * reads the array of data from the input file
+     */
 
     public static String[] readArray(String file) {
         int counter = 0;

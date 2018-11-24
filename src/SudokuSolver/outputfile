@@ -10,10 +10,9 @@ Initial Puzzle:
  
 Solved Puzzle:  
 
-
-
+ 
  
 Strategy:              Uses:         Time: 
-Twins :                 2.0          0
-Backtracking :          4.0          889
-One Possible Solution:  1.0          444
+Twins :                 2.0          445
+Backtracking :          4.0          1334
+One Possible Solution:  1.0          0

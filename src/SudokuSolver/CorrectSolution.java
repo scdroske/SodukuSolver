@@ -1,21 +1,19 @@
 package SudokuSolver;
 
-import static SudokuSolver.ReadInputFile.getAvailableVariables;
-import static SudokuSolver.ReadInputFile.getSize;
-import static SudokuSolver.ReadInputFile.getVariables;
+
 
 public class CorrectSolution {
 
     /**
-     * Checks if repeated numbers occur in a sub matrix
+     * Checks if repeated numbers occur in sub matrix
      */
     public boolean checkMatrix(String file, int row, int col) {
         ReadInputFile inputFile = new ReadInputFile();
-        int size = getSize(file);
-        String[] variables = getVariables(file);
-        String[] availableVariables = getAvailableVariables(file, size);
+        int size = inputFile.size;
+        String[] variables = inputFile.variables;
+        String[] availableVariables = inputFile.availableVariables;
 
-        String[][] sudokuboard = inputFile.getSudokuBoard(size, variables);
+        String[][] sudokuboard = inputFile.sudokuboard;
 
         int i, j;
         String central;
@@ -38,16 +36,16 @@ public class CorrectSolution {
     }
 
     /**
-     * Checks for the correct answer in the code
+     * Checks for answer in the code
      *
      */
     public boolean checkBoard(String file) {
         ReadInputFile inputFile = new ReadInputFile();
-        int size = getSize(file);
-        String[] variables = getVariables(file);
-        String[] availableVariables = getAvailableVariables(file, size);
+        int size = inputFile.size;
+        String[] variables = inputFile.variables;
+        String[] availableVariables = inputFile.availableVariables;
 
-        String[][] sudokuboard = inputFile.getSudokuBoard(size, variables);
+        String[][] sudokuboard = inputFile.sudokuboard;
 
         String value;
 

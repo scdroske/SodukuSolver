@@ -1,10 +1,6 @@
 Initial Puzzle: 
-4
-1234
-2-31
-13-4
-314-
--213
+0
+
 
  
  
@@ -13,6 +9,6 @@ Solved Puzzle:
  
  
 Strategy:              Uses:         Time: 
-Twins :                 2.0          444
-Backtracking :          4.0          0
-One Possible Solution:  1.0          444
+Twins :                 2.0          0
+Backtracking :          4.0          8444
+One Possible Solution:  1.0          445

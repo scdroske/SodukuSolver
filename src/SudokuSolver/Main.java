@@ -20,6 +20,8 @@ public class Main {
         ReadInputFile readfile = new ReadInputFile();
         readfile.readIn(file);
 
+        CorrectSolution correctSolution = new CorrectSolution();
+        correctSolution.checkBoard(file);
         WriteOutputFile writefile = new WriteOutputFile();
         writefile.WriteOutputFile(file);
 

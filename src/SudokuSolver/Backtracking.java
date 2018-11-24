@@ -20,6 +20,7 @@ public class Backtracking extends Solver {
     @Override
     protected double applyChanges() {
         try {
+            System.out.println("applying changes via Backtracking");
             Thread.sleep(11000);
         } catch (InterruptedException e) {
             System.out.println("Cannot Sleep");
@@ -42,6 +43,27 @@ public class Backtracking extends Solver {
     @Override
     protected void findApplicableCells() {
         try {
+            ReadInputFile inputFile = new ReadInputFile();
+            int size = inputFile.size;
+            String[][] sudokuboard = inputFile.sudokuboard;
+
+            for(int i = 0; i < size; i++){
+                for(int j = 0; j < size; j++){
+                    if (sudokuboard[i][j] == "-"){
+                        sudokuboard[i][j] = "0";
+                    }
+                }
+            }
+
+            for(int i = 0; i < size; i++){
+                for(int j = 0; j < size; j++){
+                    System.out.println(sudokuboard[i][j]);
+                }
+                    System.out.println("\n");
+            }
+
+
+            System.out.println("solving puzzle backtracking");
             //backtracking(sudokuboard);
             //this is where we will implement the code to backtrack
             Thread.sleep(100);
