@@ -17,7 +17,7 @@ public class NakedTwins extends Solver {
     }
 
     @Override
-    protected void findApplicableCells() {
+    protected void findApplicableCells(){
         try {
             ReadInputFile inputFile = new ReadInputFile();
             int size = inputFile.size;

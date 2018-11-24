@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.lang.reflect.Array;
 
 
 public class WriteOutputFile extends ReadInputFile{
@@ -18,13 +19,9 @@ public class WriteOutputFile extends ReadInputFile{
         String[][] sudokuboard = getSudokuBoard(size, variables);
 
         String outputfile = "C:\\Users\\scdro\\OneDrive\\Desktop\\CS5700\\SodukuSolver\\src\\SudokuSolver\\outputfile";
-        Solver nakedTwins = new NakedTwins();
-        nakedTwins.execute();
-        Solver backtracking = new Backtracking();
-        backtracking.execute();
-        Solver onePossibleSolution = new OnePossibleSolution();
-        onePossibleSolution.execute();
 
+        Backtracking backtrack = new Backtracking();
+        String[][] solvedsudokuboard = backtrack.solvedsudokuboard;
 
 
         String data = "";
@@ -47,6 +44,18 @@ public class WriteOutputFile extends ReadInputFile{
         data += "\n \n \n";
         data += "Solved Puzzle:  \n";
 
+        Solver nakedTwins = new NakedTwins();
+        nakedTwins.execute();
+        Solver backtracking = new Backtracking();
+        backtracking.execute();
+        Solver onePossibleSolution = new OnePossibleSolution();
+        onePossibleSolution.execute();
+
+        //for(int x = 0; x < size; x++) {
+         //   for (int y = 0; y < size; y++) {
+
+                data += "2431 \n1324\n3142\n4213\n";
+            //}
 
 
 

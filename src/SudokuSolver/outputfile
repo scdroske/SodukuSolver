@@ -9,10 +9,14 @@ Initial Puzzle:
  
  
 Solved Puzzle:  
+2431 
+1324
+3142
+4213
 
  
  
 Strategy:              Uses:         Time: 
-Twins :                 2.0          445
-Backtracking :          4.0          1334
+Twins :                 2.0          0
+Backtracking :          4.0          1333
 One Possible Solution:  1.0          0

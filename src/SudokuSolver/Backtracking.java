@@ -14,7 +14,7 @@ public class Backtracking extends Solver {
     //int size = getSize(file);
     //String[] availableVariables = getAvailableVariables(file, size);
     //String[] variables = getVariables(file);
-    //String[][] sudokuboard = getSudokuBoard(file,size,variables);
+    String[][] solvedsudokuboard;
 
 
     @Override
@@ -43,18 +43,27 @@ public class Backtracking extends Solver {
     @Override
     protected void findApplicableCells() {
         try {
+
             ReadInputFile inputFile = new ReadInputFile();
             int size = inputFile.size;
+            System.out.println(size);
+            String[][] solvedsudokuboard = inputFile.sudokuboard;
             String[][] sudokuboard = inputFile.sudokuboard;
 
             for(int i = 0; i < size; i++){
-                for(int j = 0; j < size; j++){
-                    if (sudokuboard[i][j] == "-"){
-                        sudokuboard[i][j] = "0";
+                for(int j = 0; j < size; j++) {
+                    if (sudokuboard[i][j] != "-") {
+                        solvedsudokuboard[i][j] = "0";
+                        System.out.println("changing variable to 0");
+                    } else {
+                        solvedsudokuboard[i][j] = sudokuboard[i][j];
+
+                        System.out.println("no variables to change");
+                        System.out.println(sudokuboard[i][j]);
                     }
                 }
             }
-
+            this.solvedsudokuboard = solvedsudokuboard;
             for(int i = 0; i < size; i++){
                 for(int j = 0; j < size; j++){
                     System.out.println(sudokuboard[i][j]);
@@ -67,7 +76,8 @@ public class Backtracking extends Solver {
             //backtracking(sudokuboard);
             //this is where we will implement the code to backtrack
             Thread.sleep(100);
-        } catch (InterruptedException e) {
+        }
+        catch (InterruptedException e) {
             System.out.println("Cannot Sleep");
         }
     }

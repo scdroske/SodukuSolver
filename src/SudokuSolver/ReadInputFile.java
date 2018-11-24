@@ -15,11 +15,16 @@ public class ReadInputFile {
     protected String[] availableVariables;
 
     public ReadInputFile() {
-        //getSize(file);
-        //readIn(file);
 
-        //getSudokuBoard(size,variables) throws SudokuException;
-    }
+        readArray(file);
+        getSize(file);
+        readIn(file);
+        getVariables(file);
+        getAvailableVariables(file,size);
+        getSudokuBoard(size, variables);
+        getSubMatrixSize(file);
+
+}
 
     public void readIn(String file)  {
         String[] variables = getVariables(file);
